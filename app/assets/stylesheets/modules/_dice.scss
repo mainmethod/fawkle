@@ -1,0 +1,73 @@
+.dice {
+  
+    .die {
+        width: 98px;
+        height: 98px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        float: left;
+        margin-left: 40px;
+        position: relative;
+        
+        &.first {
+            margin-left: 0;
+        }
+        
+        b {
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            background: #fff;
+            display: block;
+            position: absolute;
+            top: 20%;
+            left: 23%;
+            margin-top: -6px;
+            margin-left: -6px;
+            
+            &.lm {
+                top: 50%;
+            }
+            &.lb {
+                top: 80%;
+            }
+            &.m {
+                left: 50%;
+                top: 50%;
+            }
+            &.rt {
+                left: 77%;
+                top: 20%;
+            }
+            &.rm {
+                left: 77%;
+                top: 50%;
+            }
+            &.rb {
+                left: 77%;
+                top: 80%;
+            }
+        }
+        
+        &.one {
+            .lt,.lm,.lb,.rt,.rm,.rb { display: none; }
+        }
+        &.two {
+            .lm,.lt,.m,.rm,.rb { display: none; }
+        }
+        &.three {
+            .lm,.lt,.rm,.rb { display: none; }
+        }
+        &.four {
+            .lm,.rm,.m { display: none; }
+        }
+        &.five {
+            .lm,.rm { display: none; }
+        }
+        &.six {
+            .m { display: none; }
+        }
+    }
+    
+}
+
