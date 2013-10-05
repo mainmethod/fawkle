@@ -11,3 +11,8 @@
  *= require_self
  *= require_tree .
  */
+//compass
+@import "compass/reset";
+@import "compass/css3";
+
+@import "modules/layout";
