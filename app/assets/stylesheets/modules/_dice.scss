@@ -1,17 +1,22 @@
 .dice {
-  
+    text-align: center;
+}
     .die {
         width: 94px;
         height: 94px;
-        border: 3px solid #fff;
+        border: 3px solid #dadada;
         border-radius: 8px;
         float: left;
-        margin-left: 40px;
+        margin-left: 30px;
         position: relative;
-        @include opacity(0.7);
+        background: transparent;
+        @include single-transition(all, 0.3s, ease);
+
+        //@include single-transition(background, 0.3s, ease);
         
         &:hover {
-            @include opacity(1);
+            background: #333;
+            @include single-transition(background, 0.3s, ease);
         }
         
         &.first {
@@ -22,7 +27,7 @@
             width: 12px;
             height: 12px;
             border-radius: 6px;
-            background: #fff;
+            background: #dadada;
             display: block;
             position: absolute;
             top: 20%;
@@ -73,6 +78,21 @@
             .m { display: none; }
         }
     }
-    
+
+.set{
+    .die {
+        border-width: 2px;
+        width: 40px;
+        height: 40px;
+        margin: 0 6px 0 0;
+        
+        b {
+            width: 4px;
+            height: 4px;
+            border-radius: 2px;
+            margin-top: -2px;
+            margin-left: -2px;
+        }
+    }
 }
 

@@ -1,0 +1,30 @@
+.scores {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    
+    .set {
+        padding: 0 0 4px 6px;
+        height: 44px;
+        position: relative;
+        border-bottom: 1px solid #fff;
+        margin-right: 10px;
+        display: inline-block;
+        
+        span.lb, span.rb {
+           position: absolute;
+           bottom: 0;
+           display: block;
+           left: 0;
+           width: 1px;
+           border-left: 1px solid #fff;
+           height: 10px;
+        }
+        span.rb {
+            left: auto;
+            right: 0;
+            border-right: 1px solid #fff;
+            border-left: 0;
+        }
+    }
+}
